@@ -1,9 +1,0 @@
-use list.List
-
-let rec minimum (lowest: int) (l: list int) :int
-
-  match l with 
-  | a :: tl when a < lowest -> 
-    minimum a tl
-  | a :: tl when a >= lowest -> minimum lowest tl
-  | Nil -> lowest
